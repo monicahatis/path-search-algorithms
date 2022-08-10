@@ -84,6 +84,7 @@ def recreate(lines):
     if lines:
         polyLine = folium.PolyLine(locations=lines, weight=5)
         myMap.add_child(polyLine)
+        print("hello")
     myMap.save('index.html')
 
 
